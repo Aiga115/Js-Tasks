@@ -1,123 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        
-        <meta charset="UTF-8">
-        <link rel="stylesheet" src="style.css">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TASK#3</title>
+  </head>
+  <body>
+    <div class="task1">
+      <h1>Task#1</h1>
+      <h2>Question:</h2>
+      <pre>
+        for (var i = 0; i < 10; i++) {
+            setTimeout(function() {
+                console.log(i);
+            }
+        }; 
+        Что выведет консоль и почему?
+        </pre>
+        <pre id="answer"></pre>
+        <button onclick="getFirstAnswerResult()">Answer</button>
+    </div>
 
-    </head>
-    <body>
-        <h1>Задание 4</h1>
-        <div class="task#1">
-            <h1>Task#1</h1>
-        <p>Question:</p>
-        <p>На странице есть верстка:
-            </p>
-        <div id="string-1">Ядра в вёдра, выдру в тундру!</div>
-        <div id="string-2">Выдрав с выдры в тундре гетры</div>
-        <div id="string-3">В недрах тундры, выдры в гетрах </div>
-        <div id="string-4">Вытру гетрой выдре морду </div>
-        <div id="string-5">Тырят в вёдра ядра кедров!</div>
-        <div id="string-6">Вытру выдрой ядра кедров</div>
-        <p>Необходимо поочередно обратиться к каждому тэгу в нужном порядке, и вывести их содержимое в консоль, чтобы получилась осмысленная скороговорка.
-        </p>
-        <button onclick ="getAnswerFunc()">Answer</button>
-        </div>
-        
+    <div class="task2">
+        <h1>Task#2</h1>
+        <h2>Question:</h2>
+        <pre>
+            Write a JavaScript program to display the current day and time in the following format. 
+          </pre>
+          <pre id="answer"></pre>
+          <button onclick="getSecondAnswerResult()">Answer</button>
+      </div>
 
-        <div class="task#2">
-            <h1>Task#2</h1>
-            <pre>На странице есть верстка
+      <div class="task3">
+        <h1>Task#3</h1>
+        <h2>Question:</h2>
+        <pre>
+            Write a JavaScript program to calculate the factorial of a number. 
+            In mathematics, the factorial of a non-negative integer n, 
+            denoted by n!, is the product of all positive integers less than or equal to n.  
+          </pre>
+          <pre id="answer"></pre>
+          <button onclick="getThirdAnswerResult()">Answer</button>
+      </div>
 
-                <div class="element">Element 1</div>
-                <div class="element">Element 2</div>
-                <div class="element">Element 3</div>
-                <div class="element">Element 4</div>
-                <div class="element">Element 5</div>
-                <div class="element">Element 6</div>
-                
-                
-С помощью JS необходимо первым трем  элементам задать красный цвет текста, а остальным трем - зеленый.
-                </pre>
-                <button onclick="changeColorFunc()">Answer</button>
-        </div>
-        <div class="task#3">
-            <h1>Task#3</h1>
-            <pre>
-На странице есть контейнер ol id="todo-list">/ol>, необходимо с помощью цикла добавить в него пять задач (элементов li) 
-с классом task и текстом, взятым из массива задач из пяти элементов: 
+      <div class="task4">
+        <h1>Task#4</h1>
+        <h2>Question:</h2>
+        <pre>
+            Write a JavaScript program that accept two integers and display the larger.  
+          </pre>
+          <pre id="answer"></pre>
+          <button onclick="getFourthAnswerResult()">Answer</button>
+      </div>
 
-var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
-                </pre>
-                <ol id="todolist"></ol>
-                <button onclick="getToDoList()">Answer</button>
-        </div>
-        <div class = "task#4">
-            <h1>Task#4</h1>
-            <pre>
-На странице есть следующая разметка:
+      <div class="task5">
+        <h1>Task#5</h1>
+        <h2>Question:</h2>
+        <pre>
+            Write a simple JavaScript program to join all elements of the following array into a string. 
+            Sample array : myColor = ["Red", "Green", "White", "Black"]            
+          </pre>
+          <pre id="answer"></pre>
+          <button onclick="getFifthAnswerResult()">Answer</button>
+      </div>
 
-                <article>
-                <h3>What is Lorem Ipsum?</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
-                <h3>Where does it come from?</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,<br> making it over 2000 years old. The first line of Lorem Ipsum,<br>"Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. from "The Extremes of Good and Evil" by Cicero</p>
-                <h3>Why do we use it?</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content<br>of a page when looking at its layout.<br>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',<br>making it look like readable English.</p>
-                </article>
-                
-Вам необходимо с помощью JavaScript вставить после каждого тега p тег hr, <br>для визуального отделения абзацев друг от друга.
-                    
-Указания:
-Подразумевается, что вышеуказанная разметка находится внутри тега <body>.
-Нельзя модифицировать указанную разметку.
-За использование цикла дополнительные баллы.
-                
-            </pre>
-            <button onclick="changeTextFunc()">Answer</button>
-        </div>
+      <div class="task6">
+        <h1>Task#6</h1>
+        <h2>Question:</h2>
+        <pre>
+            Write a JavaScript function to get the month name from a particular date.           
+          </pre>
+          <pre id="answer"></pre>
+          <button onclick="getSixthAnswerResult()">Answer</button>
+      </div>
 
-        <div class="task#5">
-            <h1>Task#5</h1>
-            <pre>
-Дана такая разметка:
+      <div class="task7">
+        <h1>Task#7</h1>
+        <h2>Question:</h2>
+        <pre>
+            Write a JavaScript program to test the first character of a string is uppercase or not           
+          </pre>
+          <pre id="answer"></pre>
+          <button onclick="getSeventhAnswerResult()">Answer</button>
+      </div>
 
-<div id="cart-items">
-	<div class="item">Milk 1 l.<span class="qty">x 2</span></div>
-	<div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
-	<div class="item">Bread<span class="qty">x 2</span></div>
-	<div class="item">Cheese<span class="qty">x 1</span></div>
-	<div class="item">Chocolate bar<span class="qty">x 3</span></div>
-</div>
+      <div class="task8">
+        <h1>Task#8</h1>
+        <h2>Question:</h2>
+        <pre>
+            Write a JavaScript program to draw a smile	       
+          </pre>
+          <!-- <pre id="answer"></pre> -->
+          <!-- <button onclick="getEightAnswerResult()">Answer</button> -->
+          <canvas id="my-canvas" width="500" height="350"></canvas>
+      </div>
 
-Необходимо с помощью JavaScript удалить элемент "Cola 1.5 l" и заменить товар "Chocolate bar" на "Canned Fish", количеством 4 штуки.
+      <div class="task9">
+        <h1>Task#9</h1>
+        <h2>Question:</h2>
+        <pre>
+            Write a JavaScript function that reverse a number. 
+          </pre>
+          <pre id="answer"></pre>
+          <button onclick="getNineAnswerResult()">Answer</button>
+      </div>
 
-Указания:
-Для удаления использовать .remove()
-Для замены использовать .replaceChild()
-Подразумевается, что вышеуказанная разметка находится внутри тега body.
-
-
-            </pre>
-            <button onclick="textManipFunc()">Answer</button>
-        </div>
-
-        <div class="task#6">
-            <h1>Task#6</h1>
-            <pre>
-Напишите программу для создания списка задач, которые будет вводить пользователь:
-
-Для каждого пункта:
-Запрашивайте содержимое пункта у пользователя с помощью prompt.
-Создавайте пункт и добавляйте его к UL.
-Процесс прерывается, когда пользователь нажимает "Отмена" или вводит пустую строку.
-
-
-
-            </pre>
-            <button onclick ="listOfTasksFunc()">Answer</button>
-        </div>
-        
-       <script src="task3.js"></script>
-    </body>
+    <script src="answers.js"></script>
+  </body>
 </html>
